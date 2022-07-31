@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import PaginaDois from "./Components/PaginaDois";
+import PaginaUm from './Components/PaginaUm';
+import PaginaTres from './Components/PaginaTres';
+import PaginaQuatro from './Components/PaginaQuatro';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const [pagina, setPagina] = useState("dois")
+
+  switch (pagina) {
+    case "um":
+      return <PaginaUm setPagina1={setPagina} />
+    case "dois":
+      return <PaginaDois setPagina2={setPagina} />
+    case "tres":
+      return <PaginaTres setPagina3={setPagina} />
+    case "quatro":
+      return <PaginaQuatro setPagina4={setPagina} />
+    default:
+      console.log("erro")
+      break  
+  }
 }
 
 export default App;
