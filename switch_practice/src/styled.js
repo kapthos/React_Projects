@@ -4,7 +4,7 @@ export const Bla = styled.div`
     display: flex;
     flex-direction: column;
     margin: 2% auto;
-    width: 12%;
+    width: 15%;
 `
 export const BotoesDiv = styled.div`
     display: flex;
@@ -27,10 +27,20 @@ export const BotoesDiv = styled.div`
 `
 export const Texto = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     h2 {
+        margin: 15px auto;
         font-size: 2em;
         color: #111;
     }
+    ul {
+        margin: 0;
+    }
+`
+
+export const FormStyled = styled.form`
+    margin: 25px auto;
 `
