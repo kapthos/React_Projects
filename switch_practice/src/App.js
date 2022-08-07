@@ -6,7 +6,7 @@ import PaginaQuatro from './Components/PaginaQuatro';
 
 function App() {
 
-  const [pagina, setPagina] = useState("um")
+  const [pagina, setPagina] = useState("dois")
 
   switch (pagina) {
     case "um":

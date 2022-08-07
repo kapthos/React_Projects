@@ -4,7 +4,7 @@ import { Bla, BotoesDiv, Texto, FormStyled } from '../styled.js'
 function PaginaUm({ setPagina1 }) {
 
     const [busca, setBusca] = useState("")
-    const [originalUsers, setOriginalUsers] = useState([
+    const [originalUsers] = useState([
         {
             id: 1,
             name: 'Juan'
